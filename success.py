@@ -6,7 +6,7 @@ import time
 board = Arduino("/dev/cu.usbmodem3827781")
 
 while True:
-	board.digital[12].write(1)
+	board.digital[15].write(1)
 	time.sleep(.5)
-	board.digital[12].write(0)
+	board.digital[15].write(0)
 	time.sleep(.2)
