@@ -3,7 +3,7 @@ import re
 from pyfirmata import Arduino, util
 import time
 
-board = Arduino("/dev/ttyAMC0") #change this guy
+board = Arduino("/dev/ttyACM0") #change this guy
 
 #define digital output pins
 pin14 = board.get_pin(‘d:15:o’) #digital/analog : pinNumber : input/output/pwm
